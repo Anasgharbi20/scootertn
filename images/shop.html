@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../styles/stylehome.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar_top ">
+        <div class="logo"><a href="home.html"><img src="../images/logo.png"></a></div>
+        <nav class="navbar navbar-expand-sm" id="n2">
+
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.HTML">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manifacturing.html">Manifacturing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="icons">
+            <a href="home.html"><img src="../images/hm.png" style="margin-top: 15px;"></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="card" style="width: 18rem; align-self: center; margin-bottom: 100px;margin-top: 60px;">
+            <img src="../images/t3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Scooter tn</h5>
+                <p class="card-text">Finish your purchase by clicking on buy now
+                    and enjoy your new scooter
+                    experience.</p>
+                <button onclick="myFunction()" class="btn btn-success">
+                    <span id="demo">Buy it now !</span>
+                </button>
+
+                <p id="demo"></p>
+
+                <script>
+                    function myFunction() {
+                        var txt;
+                        if (confirm("Do you want to confirm your purchase ?")) {
+                            txt = "Thank you !";
+                        } else {
+                            txt = "Buy it now !";
+                        }
+                        document.getElementById("demo").innerHTML = txt;
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer">&copy;<span id="year"> </span><span> Your Company Name. All rights reserved.</span></div>
+    </footer>
+
+
+
+
+</html>
